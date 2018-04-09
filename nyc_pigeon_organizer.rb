@@ -41,7 +41,7 @@ def nyc_pigeon_organizer(data)
   #h.merge(i) { |k, x, y| x + (y ? y : []) }
   #h.merge(i)
   #merge_recursively(h, i)
-  pigeon_list.merge(h)
+  #pigeon_list.merge(h)
   
   binding.pry
 end
