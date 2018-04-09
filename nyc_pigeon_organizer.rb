@@ -23,7 +23,7 @@ def nyc_pigeon_organizer(data)
   
   pigeon_list = {}
 	  data.each do |key,values| #key == :color, values == {:purple=>["Theo", "Peter Jr.", "Lucky"],:grey=>["Theo", "Peter Jr.", "Ms. K"], etc
-    values.each do |value,names| #
+    values.each do |value,names| #value == :purple, names == 
       names.each do |name|
         pigeon_list[name] ||= {}
         binding.pry
