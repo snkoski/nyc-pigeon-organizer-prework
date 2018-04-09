@@ -31,9 +31,10 @@ def nyc_pigeon_organizer(data)
         
         pigeon_list[name] ||= {} # If pigeon_list doesn't contain the key [name] it adds the key with a value of an empty hash
         
-        pigeon_list[name][key] ||= []
-        binding.pry
+        pigeon_list[name][key] ||= [] # Adds the value[key] (:color) to [name] ("Theo") hash if it doesn't exist
+        
         pigeon_list[name][key] << value.to_s
+        binding.pry
       end
     end
   end
