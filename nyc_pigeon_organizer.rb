@@ -33,7 +33,7 @@ def nyc_pigeon_organizer(data)
   end
   pigeon_list
 end
-end
+
 #def merge_recursively(a, b)
  # a.merge(b) {|key, a_item, b_item| merge_recursively(a_item, b_item) }
 #end
