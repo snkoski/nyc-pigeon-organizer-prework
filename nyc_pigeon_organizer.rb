@@ -20,6 +20,7 @@ pigeon_data = {
       }
 
 def nyc_pigeon_organizer(data)
+  binding.pry
   pigeon_list = {}
   data.each do |category, attribute|
     if category == :color
