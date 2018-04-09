@@ -22,17 +22,17 @@ pigeon_data = {
 def nyc_pigeon_organizer(data)
   
   pigeon_list = {}
-end 	+  data.each do |key,values|
-+    values.each do |value,names|
-+      names.each do |name|
-+        pigeon_list[name] ||= {}
-+        pigeon_list[name][key] ||= []
-+        pigeon_list[name][key] << value.to_s
-+      end
-+    end
-+  end
-+  pigeon_list
-+end
+	  data.each do |key,values|
+    values.each do |value,names|
+      names.each do |name|
+        pigeon_list[name] ||= {}
+        pigeon_list[name][key] ||= []
+        pigeon_list[name][key] << value.to_s
+      end
+    end
+  end
+  pigeon_list
+end
 end
 #def merge_recursively(a, b)
  # a.merge(b) {|key, a_item, b_item| merge_recursively(a_item, b_item) }
