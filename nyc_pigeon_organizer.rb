@@ -40,13 +40,13 @@ def nyc_pigeon_organizer(data)
   i = {"Theo" => {:color => ["white"]}}
   #h.merge(i) { |k, x, y| x + (y ? y : []) }
   #h.merge(i)
-  merge_recursively(h, i)
+  #merge_recursively(h, i)
   pigeon_list.merge(h)
   
   binding.pry
 end
-def merge_recursively(a, b)
-  a.merge(b) {|key, a_item, b_item| merge_recursively(a_item, b_item) }
-end
+#def merge_recursively(a, b)
+ # a.merge(b) {|key, a_item, b_item| merge_recursively(a_item, b_item) }
+#end
 
 nyc_pigeon_organizer(pigeon_data)
